@@ -50,7 +50,7 @@
         }
 
         input {
-            width: 200px;
+            width: 250px;
             height: 44px;
             border: none;
             /* 元素周围的轮廓无效 */
@@ -63,6 +63,12 @@
 
         .input-text {
             margin: 5px auto;
+            border-radius: 16px;
+        }
+
+        .input-text:hover {
+            border: 0.5px solid rgb(76, 76, 233);
+            transition: 0.5s;
             border-radius: 4px;
         }
 
@@ -70,13 +76,15 @@
             margin: 30px auto 20px;
             border-radius: 44px;
             cursor: pointer;
+            background-color: rgba(84, 175, 249, 0.8);
         }
 
         .input-btn:hover {
             color: #fff;
             font-size: 16;
-            transform: scale(0.96);
-            background-color: rgba(9, 38, 100, 0.8);
+            border-radius: 4px;
+            transition: 0.5s;
+            background-color: rgba(10, 138, 243, 0.8);
         }
 
         .sign-div a {
@@ -89,6 +97,7 @@
         }
 
         a:hover {
+            color: #FFF;
             background: rgba(0, 0, 0, .3);
             border-radius: 8px;
         }
@@ -99,12 +108,12 @@
     <div class="div">
         <div class="head-div"></div>
         <div class="sign-div">
-            <form class="" action="登录界面.html" method="POST">
-                <h1>SIGN IN</h1>
-                <input class="input-text" type="text" name="username" placeholder="username">
-                <input class="input-text" type="password" name="password" placeholder="password">
-                <input class="input-btn" type="submit" value="Login">
-                <a href="#">Forgot your password?</a>
+            <form class="" action="#" method="POST">
+                <h1>登录</h1>
+                <input class="input-text" type="text" name="username" placeholder="帐号">
+                <input class="input-text" type="password" name="password" placeholder="密码">
+                <input class="input-btn" type="submit" value="登录">
+                <a href="#">忘记密码?</a>
             </form>
         </div>
     </div>
